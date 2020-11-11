@@ -2,27 +2,19 @@
 //Creare un oggetto che rappresenti un triangolo rettangolo con le seguenti proprietà: base e altezza
 //Calcolare perimetro e area
 
-var triangolo = {
+let triangolo = {
 
-  base:10,
+  base: 10,
 
-  altezza:5,
+  altezza: 5,
 
-  area:function(){
-      //N.B: "**n" =elevazione a n potenza
-      return (this.base * this.altezza)/2;
-  },
+  area: ()=>(triangolo.base * triangolo.altezza)/2,
 
-  ipotenusa: function(){
-    return (this.altezza**2 + this.base**2)**0.5;
-  },
+  ipotenusa: ()=>(triangolo.altezza**2 + triangolo.base**2)**0.5,
 
-  perimetro:function(){
-
-      return (this.base + this.altezza + this.ipotenusa());
-  },
+  perimetro: ()=>triangolo.base + triangolo.altezza + triangolo.ipotenusa(),
 
 };
 
-console.log(triangolo.area());
-console.log(triangolo.perimetro());
+console.log(`L'area del triangolo risulta essere :${triangolo.area()}`);
+console.log(`Il perimetro del triangolo risulta essere :${triangolo.perimetro()}`);

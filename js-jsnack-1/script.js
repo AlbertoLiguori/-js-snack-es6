@@ -4,10 +4,11 @@
 //                                                    Nome = palla
 //                                                    Peso =10
 
-const palla={
-  nome:"palla",
-  peso:10,
-  toString:()=>`La proprietà "nome" contiene: ${palla.nome}  \n La proprietà "peso" contiene: ${palla.peso}`,
+const palla = {
+
+  nome: "palla",
+  peso: 10,
+  toString: ()=>`La proprietà "nome" contiene: ${palla.nome}  \n La proprietà "peso" contiene: ${palla.peso}`,
 
 };
 
