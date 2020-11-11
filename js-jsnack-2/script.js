@@ -22,10 +22,7 @@ const bikesArray = [
 
 ];
 
-let biciCompare = (anArray) =>{
-  anArray.sort((a,b)=>(a.peso - b.peso))
-}
+bikesArray.sort((a,b) => (a.peso - b.peso))
 
-biciCompare(bikesArray);
 console.log(bikesArray);
 console.log(bikesArray[0]);
