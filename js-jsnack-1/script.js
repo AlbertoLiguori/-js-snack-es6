@@ -4,12 +4,11 @@
 //                                                    Nome = palla
 //                                                    Peso =10
 
-var palla={
+const palla={
   nome:"palla",
   peso:10,
-  toString:function(){
-    return `La proprietà "nome" contiene:` + this.nome + `\n La proprietà "peso" contiene: ` + this.peso;
-  }
+  toString:()=>`La proprietà "nome" contiene: ${palla.nome}  \n La proprietà "peso" contiene: ${palla.peso}`,
+
 };
 
 console.log(palla.toString());

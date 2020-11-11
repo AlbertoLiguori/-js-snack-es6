@@ -3,7 +3,7 @@
 //Stampare a schermo la bici con peso minore
 
 
-var bikesArray = [
+const bikesArray = [
 
   {
   nome: "Atala",
@@ -22,19 +22,23 @@ var bikesArray = [
 
 ];
 
-function biciCompare(anArray){
-  anArray.sort(function(a,b){
-    // ALTERNATIVA 1
-    // if (a.peso >= b.peso){
-    //   return -1;
-    // } else {
-    //   return 1;
-    // };
+// function biciCompare(anArray){
+//   anArray.sort(function(a,b){
+//     // ALTERNATIVA 1
+//     // if (a.peso >= b.peso){
+//     //   return -1;
+//     // } else {
+//     //   return 1;
+//     // };
+//
+//     //ALTERNATIVA 2
+//     return (a.peso - b.peso);
+//   });
+//
+// }
 
-    //ALTERNATIVA 2
-    return (a.peso - b.peso);
-  });
-
+let biciCompare = (anArray) =>{
+  anArray.sort((a,b)=>(a.peso - b.peso))
 }
 
 biciCompare(bikesArray);
