@@ -3,7 +3,6 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 
-
 const bikesArray = [
 
   {
@@ -25,12 +24,6 @@ const bikesArray = [
 
 bikesArray.sort((a,b) => (a.peso - b.peso))
 
-console.log(bikesArray);
-console.log(bikesArray[0]);
-
-let{email} = student
-console.log(email)
-
-const arr = [1,2,3,4]
-
-const[myfirstEl, mySecondEl]= arr
+let {nome} = bikesArray[0]
+let {peso} = bikesArray[0]
+console.log(`La bici più leggera risulta essere il modello "${nome}" con un peso di ${peso} kg `)
