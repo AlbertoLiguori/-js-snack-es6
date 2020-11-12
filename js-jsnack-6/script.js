@@ -1,5 +1,36 @@
-// jsnack 5
-// Partendo da un array semplice tipo:
-// var myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
-// chiediamo all’utente con 2 prompt due numeri tra 0 e la lunghezza dell’array
-// quindi creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall’utente
+// JSNACK- 6
+// dato questo array di obj iniziale:
+// var arrayObj = [
+//   {name: 'Poppy', type: 'tshirt', color: 'red'},
+//   {name: 'Jumping', type: 'occhiali', color: 'blue'},
+//   {name: 'CrissCross', type: 'scarpe', color: 'black'},
+//   {name: 'Jenny', type: 'borsa', color: 'pink'},
+// ];
+// Creiamo una copia dell’array di partenza e aggiungiamo ai singoli elementi (quindi ogni oggetto del nuovo array)
+// una nuova proprietà position che contiene una lettera casuale. non dobbiamo modificare l’array iniziale
+
+
+var arrayObj = [
+  {name: 'Poppy', type: 'tshirt', color: 'red'},
+  {name: 'Jumping', type: 'occhiali', color: 'blue'},
+  {name: 'CrissCross', type: 'scarpe', color: 'black'},
+  {name: 'Jenny', type: 'borsa', color: 'pink'},
+];
+
+//Generatore di una letterea dell'alfabeto casuale
+var charStr = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
+randomLetter = () => charStr.charAt(randomBetween(0, 24));
+
+//Assegna una proprietà position:"lettera casuale" ad un array copia
+// di arrayObj
+
+newArray = arrayObj.map((element) => {
+
+  let newObjProperty = {position: randomLetter()};
+  let mergedObj = {};
+
+  return mergedObj = {...element,...newObjProperty};
+
+});
+
+console.log(newArray);
