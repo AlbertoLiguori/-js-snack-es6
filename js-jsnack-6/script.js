@@ -18,13 +18,13 @@ var arrayObj = [
 ];
 
 //Generatore di una letterea dell'alfabeto casuale
-var charStr = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
-randomLetter = () => charStr.charAt(randomBetween(0, 24));
+const charStr = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
+let randomLetter = () => charStr.charAt(randomBetween(0, 24));
 
 //Assegna una proprietà position:"lettera casuale" ad un array copia
 // di arrayObj
 
-newArray = arrayObj.map((element) => {
+const newArray = arrayObj.map((element) => {
 
   let newObjProperty = {position: randomLetter()};
   let mergedObj = {};
