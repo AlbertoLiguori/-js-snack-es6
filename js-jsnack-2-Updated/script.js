@@ -24,6 +24,6 @@ const bikesArray = [
 
 bikesArray.sort((a,b) => (a.peso - b.peso))
 
-let {nome} = bikesArray[0]
-let {peso} = bikesArray[0]
+let {nome, peso} = bikesArray[0]
+
 console.log(`La bici più leggera risulta essere il modello "${nome}" con un peso di ${peso} kg `)
